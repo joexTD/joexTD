@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>Customize the scroll-bar</title>
+
+	<style>
+		body {
+			text-align: center;
+      height: 100vh;
+		}
+		.Container{
+      height: 2500px;
+			overflow-y: auto;
+			background-color: green;
+			border-radius: 5px;
+			margin: 0 auto;
+		}
+		
+		.Content{
+			height: 200px;
+			color: white;
+			text-align: center;
+			
+		
+	
+		}
+		
+		/*This cause the division content
+		to be displayed from right to left */
+		.Flipped{
+			direction: rtl;
+		}
+	
+		/* Designing for scroll-bar */
+		::-webkit-scrollbar {
+			width: 6px;
+		}
+	
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: gainsboro;
+			border-radius: 5px;
+     
+      
+		}
+
+	
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: black;
+			border-radius: 5px;
+		}
+	
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background: #555;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color:forestgreen;">
+		GeeksforGeeks
+	</h1>
+	
+	<div class="Container Flipped">
+		<div class="Content">
+			GeeksforGeeks is a Computer Science
+			portal for geeks. It contains well
+			written, well thought and well
+			explained computer science and
+			programming articles, quizzes etc.
+		</div>
+	</div>
+</body>
+
+</html>
